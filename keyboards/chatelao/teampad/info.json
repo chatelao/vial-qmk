@@ -1,0 +1,148 @@
+{
+    "manufacturer": "Oli Châtelain",
+    "keyboard_name": "TeamPad (QMK)",
+    "maintainer": "chatelao",
+    "bootloader_instructions": "Hold the right boot button on the Xiao RP2040 and then push the left reset button.",
+    "build": {
+        "lto": true
+    },
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "encoder": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "oled": false,
+        "rgb_matrix": true,
+        "rgblight": false,
+        "split": false,
+        "tri_layer": true
+    },    
+    "matrix_pins": {
+        "cols": [
+            "GP4",
+            "GP2",
+            "GP1",
+            "GP3"
+        ],
+        "rows": [
+            "GP0",
+            "GP7",
+            "GP6",
+                       "GP29",
+                       
+            "GP28",
+            "GP27"
+        ]
+    },
+    "pin_compatible": "promicro",
+    "audio": {
+        "pins": []
+    },   
+    "ws2812": {
+        "pin": "GP25"
+    },
+    "indicators": {
+        "num_lock": "GP26",
+        "on_state": 1
+    },
+    "rgb_matrix": {
+        "driver" : "ws2812",
+        "sleep": true,
+        "center_point": [56, 16],
+        "animations": {
+            "band_spiral_val": true,
+            "breathing": true,
+            "cycle_all": true,
+            "cycle_left_right": true,
+            "cycle_out_in": true,
+            "cycle_out_in_dual": true,
+            "cycle_pinwheel": true,
+            "cycle_spiral": true,
+            "cycle_up_down": true,
+            "digital_rain": true,
+            "dual_beacon": true,
+            "jellybean_raindrops": true,
+            "pixel_rain": true,
+            "rainbow_beacon": true,
+            "rainbow_moving_chevron": true,
+            "solid_reactive_multinexus": true,
+            "solid_reactive_multiwide": true,
+            "solid_reactive_simple": true,
+            "solid_splash": true,
+            "splash": true,
+            "typing_heatmap": true
+        },
+        "layout": 
+        [
+            { "flags": 4, "matrix": [5, 2], "x": 91,  "y": 36 },
+            { "flags": 4, "matrix": [5, 0], "x": 37,  "y": 36 },
+            { "flags": 4, "matrix": [5, 3], "x":  0,  "y": 33 },
+              
+            { "flags": 4, "matrix": [4, 0], "x": 75,  "y": 30 },
+            { "flags": 4, "matrix": [4, 1], "x": 37,  "y": 30 },
+            { "flags": 4, "matrix": [4, 2], "x":  0,  "y": 30 },
+  
+            { "flags": 4, "matrix": [3, 3], "x": 112, "y": 24 },
+            { "flags": 4, "matrix": [3, 0], "x":  75, "y": 24 },
+            { "flags": 4, "matrix": [3, 1], "x":  37, "y": 24 },
+            { "flags": 4, "matrix": [3, 2], "x":   0, "y": 24 },
+  
+            { "flags": 4, "matrix": [2, 0], "x":  75, "y": 16 },
+            { "flags": 4, "matrix": [2, 1], "x":  37, "y": 16 },
+            { "flags": 4, "matrix": [2, 2], "x":   0, "y": 16 },
+  
+            { "flags": 4, "matrix": [1, 3], "x": 112, "y":  9 },
+            { "flags": 4, "matrix": [1, 0], "x":  75, "y":  9 },
+            { "flags": 4, "matrix": [1, 1], "x":  37, "y":  9 },
+            { "flags": 4, "matrix": [1, 2], "x":   0, "y":  9 },
+  
+            { "flags": 4, "matrix": [0, 0], "x": 112, "y":  0 },
+            { "flags": 4, "matrix": [0, 1], "x":  75, "y":  0 },
+            { "flags": 4, "matrix": [0, 2], "x":  37, "y":  0 },
+            { "flags": 4, "matrix": [0, 3], "x":   0, "y":  0 }
+        ]
+    },
+    "url": "https://2u2.ch",
+    "usb": {
+        "device_version": "0.0.3",
+        "force_nkro": true,
+        "pid": "0x23B0",
+        "vid": "0xFEED"
+    },
+    "layouts": {
+        "LAYOUT": {
+            "layout": [ 
+                { "label": "A",      "matrix": [ 0, 3 ], "x": 0, "y": 0 },
+                { "label": "B",      "matrix": [ 0, 2 ], "x": 1, "y": 0 },
+                { "label": "C",      "matrix": [ 0, 1 ], "x": 2, "y": 0 },
+                { "label": "D",      "matrix": [ 0, 0 ], "x": 3, "y": 0 },
+      
+                { "label": "Esc",    "matrix": [ 1, 2 ], "x": 0, "y": 1 },
+                { "label": "1",      "matrix": [ 1, 1 ], "x": 1, "y": 1 },
+                { "label": "2",      "matrix": [ 1, 0 ], "x": 2, "y": 1 },
+                { "label": "3",      "matrix": [ 1, 3 ], "x": 3, "y": 1 },
+      
+                { "label": "Tab",    "matrix": [ 2, 2 ], "x": 0, "y": 2 },
+                { "label": "Q",      "matrix": [ 2, 1 ], "x": 1, "y": 2 },
+                { "label": "W",      "matrix": [ 2, 0 ], "x": 2, "y": 2 },
+
+                { "label": "6",      "matrix": [ 3, 2 ], "x": 0, "y": 3 },
+                { "label": "5",      "matrix": [ 3, 1 ], "x": 1, "y": 3 },
+                { "label": "4",      "matrix": [ 3, 0 ], "x": 2, "y": 3 },
+                { "label": "+",      "matrix": [ 3, 3 ], "x": 0, "y": 3 },
+
+                { "label": "L_Ctrl", "matrix": [ 4, 2 ], "x": 0, "y": 4 },
+                { "label": "Z",      "matrix": [ 4, 1 ], "x": 1, "y": 4 },
+                { "label": "X",      "matrix": [ 4, 0 ], "x": 2, "y": 4 },
+   
+                { "label": "L_Ctrl", "matrix": [ 5, 2 ], "x": 0, "y": 5 },
+                { "label": "Z",      "matrix": [ 5, 0 ], "x": 1, "y": 5 },
+                { "label": "L_Ctrl", "matrix": [ 5, 3 ], "x": 0, "y": 5 }
+            ]
+        }
+    }
+}
